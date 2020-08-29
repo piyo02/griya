@@ -1,0 +1,50 @@
+<!-- 
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">            
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('logout') }}" 
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();" >
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </li>
+    </ul>
+</nav> -->
+
+<header class="main-header">
+    
+    <a href="{{ url('/') }}" class="logo">
+      <span class="logo-mini"><b>G</b>AS</span>
+      <span class="logo-lg"><b>GRIYA</b>AS</span>
+    </a>
+    
+    <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <!-- <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> -->
+            <a class="nav-link" href="{{ route('logout') }}" 
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();" >
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>

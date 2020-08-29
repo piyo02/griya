@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-account {
+    padding: 25px 18px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(102, 93, 93), #333);
+    height: 150px;
+}
+
+.icon-account {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #DD4B39;
+}
+
+.icon-account::after {
+    content: '';
+    margin-left: 25px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.white {
+    color: white;
+}
+.red {
+    color: #DD4B39;
+}
+
+.account-number {
+    font-family: 'Staatliches', cursive;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.account-name, .saldo-account {
+    font-size: 14px;
+}
